@@ -1,4 +1,3 @@
-// https://evdokimovm.github.io/javascript/reactjs/localstorage/webstorage/2016/08/27/reactjs-markdown-editor-step-by-step.html
 var MarkUp = React.createClass({
 
 	getMarkdownText() {
