@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import marked from 'marked'
 
 
-class MarkUp extends React.Component {
+class MarkUp extends Component {
     constructor(props) {
         super(props)
     }
@@ -19,7 +19,7 @@ class MarkUp extends React.Component {
             <h3>Preview</h3>
             <div id="preview">
                 <div className="row">
-                    <div dangerouslySetInnerHTML={this.getMarkdownText(this.props.comments)} />
+                    <div dangerouslySetInnerHTML={this.getMarkdownText(this.props.markUp)} />
                 </div>
             </div>
         </div>
