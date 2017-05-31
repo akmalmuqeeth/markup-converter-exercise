@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MarkUp from './markUp'
+import MarkUpPreview from './MarkUpPreview'
 
 var MarkdownEditor = React.createClass({
     getInitialState : function() {
@@ -20,12 +20,7 @@ var MarkdownEditor = React.createClass({
                         <h3>Markdown</h3>
                         <textarea ref={ (comment) => {this.newComment = comment} } onChange={this.handleChange} className="markdown">{this.props.comment}</textarea>
                     </div>
-                    <div className="col-xs-12 col-sm-6">
-                        <h3>Preview</h3>
-                        <div id="preview">
-                            <MarkUp comments={this.state.newComment}/>
-                        </div>
-                    </div>
+                    <MarkUpPreview comments={this.state.newComment}/>
                 </div>
             </div>
         )

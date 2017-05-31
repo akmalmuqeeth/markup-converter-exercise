@@ -15,9 +15,14 @@ class MarkUp extends React.Component {
 
     render(){
         return (
-            <div className="row">
-                <div dangerouslySetInnerHTML={this.getMarkdownText(this.props.comments)} />
+        <div className="col-xs-12 col-sm-6">
+            <h3>Preview</h3>
+            <div id="preview">
+                <div className="row">
+                    <div dangerouslySetInnerHTML={this.getMarkdownText(this.props.comments)} />
+                </div>
             </div>
+        </div>
         )
     }
 
