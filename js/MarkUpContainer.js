@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import MarkUpPreview from './MarkUpPreview'
 import MarkUpEdit from './MarkUpEdit'
 
-var MarkdownEditor = React.createClass({
+var MarkUpContainer = React.createClass({
     getInitialState : function() {
         return {
 			newMarkUp: ''
@@ -30,4 +30,4 @@ var MarkdownEditor = React.createClass({
     }
 })
 
-export default MarkdownEditor
+export default MarkUpContainer

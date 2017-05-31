@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import MarkdownEditor from './js/markDownEditor'
+import MarkUpContainer from './js/MarkUpContainer'
 
-ReactDOM.render(<MarkdownEditor/>, document.getElementById('app'))
+ReactDOM.render(<MarkUpContainer/>, document.getElementById('app'))
