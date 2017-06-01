@@ -1,5 +1,6 @@
 # Exercise to practice ReactJS
 
+## Based off of freecodecamp's ReactJS Exercise project 1
 
 Run npm install
 
